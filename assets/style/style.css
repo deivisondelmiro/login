@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #343e41da;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+label {
+  letter-spacing: 2px;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+}
+
+.containerLogin, .containerSignUp {
+  min-width: 40%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#2635372c, #26353711);
+}
+
+.containerSignUp {
+  display: none;
+}
+
+.containerInput {
+  position: relative;
+}
+
+.containerBackgroundLogin {
+  width: 60%;
+  background: #2635372c url('../images/background.jpg') no-repeat center;
+  background-size: cover;
+  filter: blur(1px);
+}
+
+h2 {
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+form {
+  width: 320px;
+}
+
+.emailLabel, .passwordLabel, .yourNameLabel, .emailLabel {
+  font-size: 1em;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.emailInput, .passwordInput, .yourNameInput {
+  flex: 1 0 300px;
+  min-width: 100%;
+  font-size: 1em;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px .5px rgba(0, 0, 0, 0.062);
+  position: relative;
+}
+
+.emailInput:focus, .passwordInput:focus, .yourNameInput:focus, .passwordInput:focus {
+  outline: 1px solid rgba(112, 112, 112, 0.459);
+}
+
+.errorMensageYourName, .errorMensageEmail, .errorMensagePassword {
+  display: none;
+  font-size: .7em;
+  color: rgba(207, 9, 9, 0.849);
+  position: absolute;
+  bottom: 3px;
+}
+
+.inputInvalid {
+  outline: 1px solid rgba(207, 9, 9, 0.849);
+}
+
+.inputValid {
+  outline: 1px solid rgba(10, 131, 10, 0.808);
+}
+
+.active {
+  display: block;
+  margin-bottom: 0px;
+}
+
+.passwordInputValid {
+  color: rgba(10, 131, 10, 0.808);
+}
+
+.passwordInputInvalid {
+  color: rgba(207, 9, 9, 0.849);
+}
+
+.emailInput.inputInvalid:focus, .passwordInput.inputInvalid:focus, .yourNameInput.inputInvalid:focus {
+  outline: 1px solid rgba(207, 9, 9, 0.849);
+}
+
+.emailInput.inputValid:focus, .passwordInput.inputValid:focus, .yourNameInput.inputValid:focus {
+  outline: 1px solid rgba(10, 131, 10, 0.808);
+}
+
+.containerRememberMe {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: .9em;
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+}
+
+#rememberMe {
+  margin-right: 2px;
+  outline: 1px solid rgba(112, 112, 112, 0.459);
+}
+
+.rememberMeLabel {
+  letter-spacing: 0px;
+  cursor: pointer;
+}
+
+.buttonSubmit {
+  width: 100%;
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #404d50da;
+  margin-bottom: 5px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.buttonSubmit:hover {
+  background-color: #404D50;
+}
+
+.anyAccount {
+  margin-bottom: 25px;
+  font-size: .9em;
+  text-align: center;
+}
+
+.spanFont a {
+  color: #404d50da;
+}
+
+.spanFont a:hover {
+  color: #404D50;
+}
+
+.containerLoginSocialMedia {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.containerLoginSocialMedia a {
+  display: inline-block;
+  margin: 10px 3px;
+  padding: 5px;
+}
+
+#parametrosInfo {
+  font-size: 0.7em;
+  color: #343e41da;
+}
+
+.listaParametros {
+  font-size: 0.7em;
+  margin: 5px 0px 10px 0px;
+}
+
+.listaParametrosErro li {
+  color: rgba(207, 9, 9, 0.849);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  margin: 5px;
+  font-size: .8em;
+}
+
+@media (max-width: 900px) {
+  .containerLogin, .containerSignUp {
+    min-width: 50%;
+  }
+  .containerBackgroundLogin {
+    width: 50%;
+  }
+  form {
+    width: 280px;
+  }
+  .emailInput, .passwordInput, .yourNameInput {
+    min-width: 100%;
+  }
+}
+
+@media (max-height: 600px) {
+  body {
+    height: 150vh;
+  }
+  .footer {
+    display: none;
+  }
+}

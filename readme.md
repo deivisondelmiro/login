@@ -1,0 +1,2 @@
+<h1 align="center" id="title">Tela de Login/Cadastro</h1>
+<p align="center" class="description">Desenvolvimento de uma tela de login e cadastro. Contendo uma mudança da página de login para a de cadastro sem outro recarregamento. Assim como também validações de inputs de email e senhas, verificando se tem validação básica e demonstrando isso para o usuário.</p>

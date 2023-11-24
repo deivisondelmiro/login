@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="stylesheet" href="./assets/style/mobile.css" media="screen and (max-width: 675px)">
+  <title>Login</title>
+</head>
+<body>
+  <div class="container">
+    <div class="containerLogin">
+      <div class="container-form">
+        <h2 id="titleLogin">Bem-Vindo ao Login!</h2>
+        <form action="" class="form" novalidate>
+          <div class="containerInput containerInputEmailLogin">
+            <label for="emailSignInInput" class="emailLabel">Email</label>
+            <input type="email" name="emailSignIn" id="emailSignInInput" class="emailInput emailInputSignIn emailValidation" placeholder="seuemail@email.com" required>
+            <span class="errorMensageEmail">Email inválido</span>
+          </div>
+          <label for="passwordSignInInput" class="passwordLabel passwordSignInLabel">Senha</label>
+          <input type="password" name="passwordSignIn" id="passwordSignInInput" class="passwordInput" placeholder="Sua senha">
+          <div class="containerRememberMe">
+            <div class="rememberMe">
+              <input type="checkbox" name="rememberMe" id="rememberMe">
+              <label for="rememberMe" class="rememberMeLabel">Lembrar acesso</label>
+            </div>
+            <a href="#">Esqueceu a senha?</a>
+          </div>
+          <button type="submit" id="buttonSubmitSignIn" class="buttonSubmit">Login</button>
+          <p class="createAccountInput anyAccount">Não possui conta? <span class="spanFont"><a href="#">Cadastre-se</a></span></p>
+        </form>
+        <div class="containerLoginSocialMedia">
+          <p><a href="#">Google</a> <span>|</span> <a href="#">Facebook</a></p>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>Created by <a href="https://github.com/deivisondelmiro" target="_blank">Deivison Delmiro</a>. Image in <a href="https://www.pexels.com/pt-br/foto/animal-bicho-corpo-d-agua-corpo-de-agua-8519185/" target="_blank">Pexels</a></p>
+      </footer>
+    </div>
+    <div class="containerSignUp">
+      <div class="container-form">
+        <form action="" class="form">
+          <h2>Cadastrar-se</h2>
+          <div class="containerInput containerInputText">
+            <label for="yourNameInput" class="yourNameLabel">Seu Nome</label>
+            <input type="text" name="inputName" class="yourNameInput" id="yourNameInput" placeholder="Seu nome completo">
+            <span class="errorMensageYourName">Digite seu nome!</span>
+          </div>
+          <div class="containerInput containerInputEmailLogin">
+            <label for="emailSignUpInput" class="emailLabel">Email</label>
+            <input type="email" name="emailSignUp" id="emailSignUpInput" class="emailInput emailInputSignUp emailValidation" placeholder="seuemail@email.com">
+            <span class="errorMensageEmail">Email inválido!</span>
+          </div>
+          <div class="containerInput containerInputPassword">
+            <label for="passwordSignUpInput" class="passwordLabel">Senha</label>
+            <input type="password" name="passwordSignUp" id="passwordSignUpInput" class="passwordInput newPasswordInput" placeholder="Crie uma senha">
+            <span class="errorMensagePassword">Senha inválida!</span>
+          </div>
+          <p id="parametrosInfo">Crie a senha com os paramêtros abaixo:</p>
+          <ul class="listaParametros">
+            <li>Mínimo 6 caracteres</li>
+            <li>Letras maiúsculas (A-Z)</li>
+            <li>Letras minúsculas (a-z)</li>
+            <li>Números (0-9)</li>
+            <li>Caracteres especiais (!, @, #, $, etc.)</li>
+          </ul>
+          <div class="containerInput containerInputPasswordAgain">
+            <label for="passwordConfirmInput" class="passwordLabel passwordConfirmLabel">Confirmar Senha</label>
+            <input type="password" name="passwordSignUpConfirm" id="passwordConfirmInput" class="passwordInput passwordConfirmInput" placeholder="Digite a senha novamente">
+            <span class="errorMensagePassword">Digite a mesma senha!</span>
+          </div>
+          <button type="submit" id="buttonSubmitSignUp" class="buttonSubmit">Cadastrar</button>
+          <p class="anyAccount">Já possui conta? <span class="spanFont"><a href="#" class="doLogin">Faça o login!</a></span></p>
+        </form>
+            </div>
+            <footer class="footer">
+              <p>Created by <a href="https://github.com/deivisondelmiro" target="_blank">Deivison Delmiro</a>.</p>
+            </footer>
+      </div>
+    <div class="containerBackgroundLogin">
+    </div>
+  </div>
+
+  <script type="module" src="./assets/js/script.js"></script>
+</body>
+</html>
